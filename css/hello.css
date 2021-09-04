@@ -1,0 +1,10 @@
+body {
+   width: 50%;
+   margin: 20px;
+   box-sizing: border-box;
+}
+
+input {
+    border-radius: 3px;
+    border-color: #146c43;
+}

@@ -1,9 +1,16 @@
+
+var pacientes = [];
 var botao = document.getElementById("calcular");
 botao.addEventListener('click', function(){
     var paciente = lePaciente();
+    pacientes.push (paciente);
     mostraPaciente (paciente);
 });
 
+var botaoRelatorio = document.getElementById("relatorio");
+botaoRelatorio.addEventListener('click', function() {
+    geraRelatorio (pacientes);
+});
 
 // var paciente = {
 //     nome: "Renato Oliveira",
